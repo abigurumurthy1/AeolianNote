@@ -1,0 +1,16 @@
+{
+  "name": "AeolianNote Backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "supabase:start": "supabase start",
+    "supabase:stop": "supabase stop",
+    "supabase:db:reset": "supabase db reset",
+    "supabase:functions:serve": "supabase functions serve",
+    "supabase:functions:deploy": "supabase functions deploy wind-engine",
+    "seed:zipcodes": "node scripts/seed-zipcodes.js"
+  },
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.38.0"
+  }
+}
