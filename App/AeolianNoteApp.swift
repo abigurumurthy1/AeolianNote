@@ -1,16 +1,15 @@
+//
+//  Aeolian_NoteApp.swift
+//  Aeolian Note
+//
+
 import SwiftUI
 
 @main
-struct AeolianNoteApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
-    @StateObject private var authViewModel = AuthViewModel()
-    @StateObject private var locationService = LocationService.shared
-
+struct Aeolian_NoteApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environmentObject(authViewModel)
-                .environmentObject(locationService)
         }
     }
 }
